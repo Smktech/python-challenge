@@ -19,8 +19,8 @@ with open(election_data, "r") as csvfile:
 
     # loop through all data
     for row in csvreader:
-
-        # If statement to count by individual candidate
+# Rows 24-27 were sourced from "BKEUTHAN, guithub.""
+        # If statement to count by individual candidate 
         if row[2] not in candidate_list:
             candidate_list.append(row[2])
             candidate_index = candidate_list.index(row[2])
